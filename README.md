@@ -13,7 +13,7 @@ docker compose up -d --build
 ## Features
 
 - [x] Nginx container
-- [ ] PHP-FPM container
-- [ ] Nginx PHP configuration
+- [x] PHP-FPM container
+- [x] Nginx PHP configuration
 - [ ] Docker networking
 - [ ] Test PHP page
