@@ -10,10 +10,14 @@ Simple project to run PHP with Nginx using Docker.
 ```bash
 docker compose up -d --build
 ```
+## Routing
+If the URL ends with `index.php`, our custome PHP  page is shown.
+If the URL ends with `index.html`, our Nginx  page is shown.
+
 ## Features
 
 - [x] Nginx container
 - [x] PHP-FPM container
 - [x] Nginx PHP configuration
-- [ ] Docker networking
+- [x] Docker networking
 - [ ] Test PHP page
