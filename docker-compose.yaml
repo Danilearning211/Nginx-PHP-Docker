@@ -1,0 +1,30 @@
+services:
+ ngin:
+    container_name: ngin-php
+    image: nginx:latest
+    ports: 
+      - 80:80
+    volumes:
+      - index-vol:/usr/share/nginx/html
+      - nginx-conf:/etc/nginx/conf.d/
+      - nginx-log:/var/log/nginx/
+    networks: 
+      - back-php
+ php:
+  container_name: back-php
+  image: php:8.6.0RC2-fpm-alpine3.23
+  volumes:
+   - index-vol:/var/www/html/
+  networks: 
+   - back-php
+
+volumes:
+  index-vol:
+    external: true
+  nginx-conf:
+    external: true
+  nginx-log:
+    external: true
+networks:
+  back-php:
+    external: true
