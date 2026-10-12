@@ -20,4 +20,4 @@ docker compose up -d --build
 - [x] PHP-FPM container
 - [x] Nginx PHP configuration
 - [x] Docker networking
-- [ ] Test PHP page
+- [x] Test PHP page
