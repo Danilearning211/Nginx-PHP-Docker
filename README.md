@@ -21,3 +21,4 @@ docker compose up -d --build
 - [x] Nginx PHP configuration
 - [x] Docker networking
 - [x] Test PHP page
+- [ ] Add ci/cd to project 
